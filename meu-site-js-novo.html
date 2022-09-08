@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JK-Meu site</title>
+        <link rel="stylesheet" type="text/css" href="my-style.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body id="Cabecalho" onclick="mudaCor()">
+        
+        <header class="Superior">
+            <img src="imagens/Assinatura-Vertical-preta.png" width=100% alt="Logo EngNet">
+            <img src="imagens/img-site.jpg" width="100%" alt="Uma foto minha">
+        </header>
+            <h1 style="text-align: center;">
+                Olá, me chamo João Kleber e aqui vai mais sobre mim:</h1>
+            <form>
+                <label>Escolhe a cor do background:</label>
+                <input type="color" name="myCor" id="colorPick" value="#FF731A"/><br><br>
+                <label>Após escolher clique no background para aplicar a cor
+                    selecionada.
+                </label>
+            </form>
+            
+            <script>
+                function mudaCor(){
+                    document.getElementById("Cabecalho").style.background = 
+                    document.getElementById("colorPick").value;
+                }
+                console.log("Olá")
+            </script>
+            <label>Escolhe a fonte do texto</label>
+            <select class="input" name="font-input" id="fontPick" onchange="mudaFonte(this);"><br><br>
+                <option value="Times New Roman" selected="selected">
+                    Times New Roman
+                </option>
+                <option value="Arial">
+                    Arial
+                </option>
+                <option value="Comic Sans">
+                    Comic Sans
+                </option>
+                <option value="fantasy">
+                    fantasy
+                </option>
+            </select>
+            <script>
+                function mudaFonte (){
+                    document.getElementById('texto1').style.fontFamily =
+                    document.getElementById('fontPick').value;
+                    document.getElementById('texto2').style.fontFamily =
+                    document.getElementById('fontPick').value;
+                    document.getElementById('texto3').style.fontFamily =
+                    document.getElementById('fontPick').value;
+                }
+            </script>
+            <p class="texto">Sou estudante de engenharia de redes
+                de comunicação. Eu sou uma pessoa tímida em primeiro contato, mas
+                após conhecer melhor as pessoas costumo não calar a boca. 
+            </p>
+
+            <div class="container">
+                <div class="coluna-33">
+                    <h2>Tempo Livre</h2>
+                    <div class="texto-tempo-livre" id="texto1">
+                        No meu tempo livre costumo:
+                        <p> * Maratonar filmes e séries
+                            ruins com minha namorada</p>
+                        <p> * Jogar Board Games</p>
+                        <p> * Fazer uns bolos top</p>
+                    </div>
+                </div>
+                <div class="coluna-33">
+                    <h2>Eng.Redes de Comunicação</h2>
+                    <div class="texto-curso" id="texto2">
+                        Eu escolhi Redes pois:
+                        <p>
+                            * Tive contato com as matérias de telecomunicações<br/>
+                            antes e gostei do conteúdo
+                        </p>
+                        <p> 
+                            * Gosto de programar, pelo menos quando as coisas<br/> 
+                            ainda estão fazendo sentido :p
+                        </p>
+                    </div>
+                </div>
+                <div class="coluna-33">
+                    <h2>EngNet</h2>
+                    <div class="texto-ej" id="texto3">
+                        Eu escolhi a EngNet pois:
+                        <p>
+                            <strong>* Desejo ter mais experiência com o <br/>
+                            mercado de trabalho de tecnologia no DF.</strong> 
+                        </p>
+                        <p>
+                            <strong>* Desejo aprender e desenvolver minhas habilidades <br/>
+                                em novas tecnologias. Essa eu já estou praticando, afinal
+                                pratiquei HTML e CSS para fazer esse site hehehe.</strong>
+                        </p>
+                        <strong>
+                            <strong>* Quero conhecer mais pessoas do curso.<br/>
+                            Engeneticos de todo mundo uni-vos.</strong>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </body>
+
+</html>
