@@ -1,0 +1,80 @@
+html{
+    --laranja: #FF731A;
+    --preto: #080808;
+    --branco: #FFF9F9;
+    --roxo: #A031DB;
+    --rosa: #FF006B;
+}
+
+body{
+    background-color: var(--laranja);  
+}
+
+header{
+    width: 5%;
+}
+
+#laranja{
+    flex: 1;
+    background: var(--laranja);
+    color: var(--laranja);
+}
+
+#roxo{
+    flex: 1;
+    background: var(--roxo);
+    color: var(--roxo);
+}
+
+#rosa{
+    flex: 1;
+    background: var(--rosa);
+    color: var(--rosa);
+}
+
+.coluna-33 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    width: 33%;
+    border:0.125rem solid #080808;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    padding:0.625rem;
+}
+
+
+.texto {
+    width: 100%;
+    text-align:center;
+    font-size: 1.375rem;
+    padding-top: 0.3125rem;
+    color: var(--branco);
+}
+
+.texto-tempo-livre {
+    text-align:center;
+    font-size: 1.25rem;
+    padding-top: 0.3125rem;
+    color:var(--branco);
+}
+
+.texto-curso {
+    text-align:center;
+    font-size: 1.25rem;
+    padding-top: 0.3125rem;
+    color: var(--branco);
+}
+
+.texto-ej {
+    text-align:center;
+    font-size: 1.25rem;
+    padding-top: 0.3125rem;
+    color: #FFFF;
+}
